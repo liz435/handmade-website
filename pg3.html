@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+  <meta charset="utf-8" />
+  <title> what time? </title>
+  <link rel = "stylesheet" href = "style.css">
+  <script src = "random.js"></script>
+  <script type="text/javascript">
+
+
+function startTime()
+{
+var today = new Date();
+var h = today.getHours();
+var m = today.getMinutes();
+var s = today.getSeconds();
+var d = today.getDate();
+var y = today.getYear();
+var day = today.getDay();
+let hms = h + ":" + m + ":" + s;
+let timelink1 = "<a href ='pg2.html'>"
+let timelink2 = "<a href = 'chance.html'>"
+// add a zero in front of numbers<10
+m = checkTime(m);
+s = checkTime(s);
+document.getElementById('txt').innerHTML= h + ":" + m + ":" + s;
+document.getElementById('txtsec').innerHTML = day;
+document.getElementById('txtmin').innerHTML = timelink2 + 2022;
+document.getElementById('txthr').innerHTML = timelink1 + d +"</a>"
+t = setTimeout('startTime()',500);
+
+
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+
+
+</head> 
+
+<body class = "timePage"onload="startTime()" >
+<div id="txt"></div> 
+<div id="txtsec"></div>
+<div id="txtmin"></div>
+<div id="txthr"></div>
+
+</body>
+</html>
+ 

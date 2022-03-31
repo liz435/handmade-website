@@ -1,0 +1,7 @@
+#aurora{
+	height: 800px;
+	width: 800px;
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(43,43,173,1) 18%, rgba(94,49,27,1) 50%, rgba(9,46,10,1) 76%, rgba(0,212,255,1) 100%);
+}
+

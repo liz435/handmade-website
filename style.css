@@ -1,0 +1,238 @@
+.indexbody{
+	background-color: lightcyan;
+}
+
+.one{
+  background-color: lightgreen;
+}
+
+.btnbody{
+  background-color: lightsalmon;
+}
+
+.timePage{
+  background-color: lightblue;
+}
+
+p{
+
+	background: aquamarine;
+}
+
+#txt{
+  font-size: 200px;
+  text-align: center;
+ /* background-image: linear-gradient(
+    -235deg,
+    #231557 1%,
+    #44107a 6%,
+    #ff1361 29%,
+    #fff800 60%,
+    #ffff00 100%
+  );*/
+  position:  absolute;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+ 
+  animation-name: txtani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes txtani {
+  0%   {background-image:yellow; left:0px; top:0px;}
+  25%  {background-color:orange; left:200px; top:0px;}
+  50%  {background-color:lightblue; left:200px; top:200px;}
+  75%  {background-color:cyan; left:0px; top:200px;}
+  100% {background-color:lightsalmon; left:0px; top:0px;}
+}
+
+#txtsec{
+  font-size: 120px;
+  position: absolutes;
+  animation: linear;
+  animation-name: txtsecani;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes txtsecani{
+from { -webkit-transform: translateY(-200%); color: white; -webkit-transform: rotateZ(360deg)}
+  to { -webkit-transform: translateY(200%); color:lightpink; -webkit-transform: rotateZ(0deg)}
+}
+
+#txtmin{
+  font-size: 160px;
+  text-align: right;
+  
+
+  background-image: linear-gradient(
+    -235deg,
+    #231557 1%,
+    #44107a 6%,
+    #ff1361 29%,
+    #fff800 60%,
+    #ffff00 100%
+  );
+
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+ 
+
+  animation-name: txtminani;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes txtminani{
+
+from { -webkit-transform: translateY(-100%); color: lightcyan; opacity: 1; }
+  to { -webkit-transform: translateY(200%); color:lightpink;  opacity: 0;}
+}
+
+
+#txthr{
+font-size: 200px;
+  text-align: center;
+  background-image: linear-gradient(
+    -235deg,
+    #231557 1%,
+    #44107a 6%,
+    #ff1361 29%,
+    #fff800 60%,
+    #ffff00 100%
+  );
+
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+ 
+  animation-name: txthrani;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes txthrani{
+   0%   {-webkit-transform: scale(1);}
+  25%  {-webkit-transform: scale(1.5);}
+  50%  {}
+  75%  {}
+  100% {}
+}
+
+
+#myHeader{
+	 text-align: center;
+	 /*margin-top: 20%;*/
+
+	  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-size: 140px;
+}
+
+.btnstart{
+   display: block;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   border: none;
+   color: red;
+   margin-bottom: 10%;
+   margin-left: 45%;
+}
+
+.btnstart:hover {background-color: red}
+
+.btnstart:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/*.buttons {
+width: 200px;
+height: 200px;
+margin: 300px;
+position: relative;
+border: none;
+margin-top: 50px;
+border-radius: 50%;
+display: inline;}
+*/
+
+
+.action_btn {
+width: 200px;
+height: 200px;
+border: none;
+border-radius: 50%;
+margin: 150px;
+display: inline;}
+
+.action_btn:hover {background-color: lightcoral;}
+.action_btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/*.btns {
+width: 200px;
+height: 200px;
+margin: 50px;
+border: none;
+margin-top: 50px;
+border-radius: 50%;
+display: inline;}
+*/
+
+
+.btn {
+width: 200px;
+height: 200px;
+border: none;
+border-radius: 50%;
+margin: 150px;
+display: inline;}
+
+.btn:hover {background-color: lightcoral;}
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
